@@ -1,0 +1,13 @@
+language: bash
+
+dist: bionic
+
+#services:
+#  - docker
+
+install:
+  - ping -c 4 git.haproxy.org
+  - echo -e "GET / HTTP/1.1\nHost: git.haproxy.org\n" | nc -N git.haproxy.org 80
+
+script:
+  - git clone http://git.haproxy.org/git/haproxy-2.1.git/ haproxy
