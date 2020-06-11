@@ -6,10 +6,11 @@ dist: bionic
 #  - docker
 
 install:
-  - ping -c 4 www.google.de
+  #- ping -c 4 www.google.de
   #- ping -c 4 git.haproxy.org
   #- echo -e "GET / HTTP/1.1\nHost: git.haproxy.org\n" | nc -N git.haproxy.org 80
-  - bash netcat.sh
+  #- bash netcat.sh
 
 script:
-  - git clone http://git.haproxy.org/git/haproxy-2.1.git/ haproxy
+  #- git clone http://git.haproxy.org/git/haproxy-2.1.git/ haproxy
+  - git clone git@github.com:haproxy/haproxy.git haproxy
