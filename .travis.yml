@@ -6,7 +6,7 @@ dist: bionic
 #  - docker
 
 install:
-  - ping -c 4 git.haproxy.org
+  #- ping -c 4 git.haproxy.org
   - echo -e "GET / HTTP/1.1\nHost: git.haproxy.org\n" | nc -N git.haproxy.org 80
 
 script:
