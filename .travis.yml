@@ -17,5 +17,5 @@ install:
   #- bash netcat.sh
 
 script:
-  - git clone http://git.haproxy.org/git/haproxy-2.1.git/ haproxy
+  - git clone https://git.haproxy.org/git/haproxy-2.1.git/ haproxy
   #- git clone https://github.com/haproxy/haproxy.git haproxy
