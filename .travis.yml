@@ -1,9 +1,6 @@
 language: bash
 
 dist: bionic
-
-addons:
-  ssh_known_hosts: git.haproxy.org
   
 #services:
 #  - docker
