@@ -8,8 +8,9 @@ dist: bionic
 install:
   #- sudo apt-get update
   #- sudo apt-get install -yq mtr-tiny
-  #- ping -c 4 www.google.de
-  #- ping -c 4 git.haproxy.org
+  - ping -c 4 www.google.de
+  - ping -c 4 git.haproxy.org
+  - curl https://git.haproxy.org/
   #- curl https://ifconfig.co
   #- mtr -4 -c 10 -r 8.8.8.8
   #- mtr -4 -c 10 -r git.haproxy.org
